@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星と眠る哲学入門Top</title>
+    <link rel="stylesheet" href="tetugaku.css">
+    <script>
+        function toggleSidebar() {
+            let sidebar = document.querySelector('.sidebar');
+            let toggleShow = document.querySelector('.toggle-show');
+            sidebar.classList.toggle('collapsed');
+            if (sidebar.classList.contains('collapsed')) {
+                toggleShow.style.display = 'block';
+            } else {
+                toggleShow.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+	<a href="哲学入門.html">星と眠る哲学入門</a>
+	</span>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <button class="sidebar-toggle" onclick="toggleSidebar()">←</button>
+            <h2>サイドバー</h2>
+            <ul>
+                <li>
+		<a href="ginga.html">明後日の銀河ゆれる編</a>
+		</li>
+                <li>
+		マリオネットの糸切ばさみ編
+		</li>
+                <li>
+		未確認
+		</li>
+                <li>
+		編集者用
+		</li>
+            </ul>
+        </aside>
+        <button class="toggle-show" onclick="toggleSidebar()">→</button>
+        <main class="content">
+            <h2>星と眠る哲学入門</h2>
+            <p>
+君が星を見ないとき、そこに白鳥の羽が降りますように。
+	　　</p>
+        </main>
+    </div>
+    <footer>
+        <p>フッター</p>
+    </footer>
+</body>
+</html>
